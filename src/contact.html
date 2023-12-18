@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Me | Helina Tarekegn</title>
-  </head>
-  <body>
-    <header>
-      <h1>Contact</h1>
+    <link rel="stylesheet" href="Styles/respflex.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+</head>
+<body class="body">
+
+    <header class="header">
+        <h1>Contact </h1>
     </header>
 
-    <main>
-      <address>
-        <p>Phone: +(251)9 4283 8202</p>
-        <p>
-          Email:
-          <a href="mailto:example@email.com">helinatarekegn1213@gmail.com</a>
-        </p>
-        <p>Home Address: CMC, AddisAbaba, Ethiopia</p>
-        <p>
-          Twitter:
-          <a href="https://twitter.com/@helinna" target="_blank">@helinna</a>
-        </p>
-      </address>
+    <main class="main-contact">
+        <address>
+            <p><span class="highlight">Phone</span>: +(251)9 4283 8202</p>
+            <p><span class="highlight">Email</span>: <a href="mailto:example@email.com">helinatarekegn1213@gmail.com</a></p>
+            <p><span class="highlight">Home Address</span>: CMC, AddisAbaba, Ethiopia</p>
+            <p><span class="highlight">Twitter</span>: <a href="https://twitter.com/@helinna" target="_blank">@helinna</a></p>
+        </address>
     </main>
 
     <footer>
-      <section id="nav">
-        <ul>
-          <li>
-            <button><a href="home.html">Home</a></button>
-          </li>
-          <li>
-            <button><a href="about.html">About</a></button>
-          </li>
-          <li>
-            <button><a href="hobbies.html">Hobbies</a></button>
-          </li>
-          <li>
-            <button><a href="portfolio.html">Portfolio</a></button>
-          </li>
-        </ul>
-      </section>
+        <section class="homen">
+            <ul>
+                <li><button><a href ="home.html">Home</a></button></li>
+                <li><button><a href ="about.html">About</a></button></li>
+                <li><button><a href ="hobbies.html">Hobbies</a></button></li>
+                <li><button><a href ="portfolio.html">Portfolio</a></button></li>
 
-      <div class="social-icons">
-        <a
-          href="https://www.instagram.com/@_.helinna__"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/i.png" alt="Instagram"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/l.png" alt="Linkedin"
-        /></a>
-        <a
-          href="https://t.me/@heebiejeebiies"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/t.png" alt="Telegram"
-        /></a>
-        <a
-          href="https://www.facebook.com/@Helina Tarekegn"
-          class="social-icon"
-          target="_blank"
-          ><img src="./images/f.png" alt="Facebook"
-        /></a>
-      </div>
+            </ul>
+        </section>
+        <nav id="hamburger-nav">
+           
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                 <li><a href="home.html"onclick="toggleMenu()">Home</a></li>   
+                 <li><a href="about.html"onclick="toggleMenu()">About</a></li>
+                 <li><a href="hobbies.html"onclick="toggleMenu()">Hobbies</a></li>
+                 <li><a href="portfolio.html"onclick="toggleMenu()">Portfolio</a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="social-icons">
+                <a href="https://www.instagram.com/@_.helinna__" class="social-icon" target="_blank"><img src="images/i.png" alt="Instagram"></a> 
+                <a href="https://www.linkedin.com/in/@Helina Tarekegn" class="social-icon" target="_blank"><img src="images/l.png" alt="Linkedin"></a> 
+                <a href="https://t.me/@heebiejeebiies" class="social-icon" target="_blank"><img src="images/t.png" alt="Telegram"></a> 
+                <a href="https://www.facebook.com/@Helina Tarekegn" class="social-icon" target="_blank"><img src="images/f.png" alt="Facebook"></a> 
+        </div>
+        <div class="copy">
+            <p>copyrights reserved &copy. 2023</p>
+        </div>
+           
+        
     </footer>
-  </body>
+    <script src="Styles/javascript.js"></script>
+
+</body>
 </html>

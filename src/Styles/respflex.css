@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+.home {
+    background: url('/UGR-9858-13/src/images/med.jpeg') center/cover no-repeat;
+    background-position:fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+    width:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    max-width: var(--max-width);
+    margin:auto;
+    padding:1.5rem 1rem;
+     
+
+    
+}
+
+.logo img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.homen ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    transition:left 0.3s;
+    
+    
+}
+
+.homen a {
+    padding: 0.5rem 0rem;
+    border:2px solid transparent; 
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.homen a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+/*Hamburger navigation*/
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:24px;
+    width:30px;
+    cursor:pointer;
+}
+.hamburger-icon span{
+    width:100%;
+    height:2px;
+    background-color: black;
+    transition:all 0.3 ease-in-out;
+}
+.menu-links{
+    position:fixed;
+    top:60px;
+    right:0;
+    background-color:rgb(191, 122, 72) ;
+    max-height:0;
+    overflow:hidden;
+    transition:all 0.3 ease-in-out;
+    width:100%;
+   
+
+}
+.menu-links a{
+    display: block;
+    padding:10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    transition:all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style:none;
+
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform:rotate(45deg) translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity:0;
+}
+.hamburger-icon.open span:last-child{
+    transform:rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-icon span:first-child{
+    transform:none;
+    
+}
+.hamburger-icon span:first-child{
+    opacity:1;
+
+}
+.hamburger-icon span:first-child{
+    transform:none;
+
+}
+
+/*main*/
+.homem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+   
+}
+.homem a {
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    box-shadow: none;
+}
+
+.homem a:hover {
+    letter-spacing: 0.25em;
+}
+#quote {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 200px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgb(191, 122, 72);
+}
+    
+
+.social-icons a {
+    margin: 10px 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/*about page*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: bisque;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(191, 122, 72);
+}
+
+.main-about {
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto; 
+    padding: 30px; 
+}
+
+#about {
+    grid-column: 1; 
+}
+
+#image {
+    grid-column: 2; 
+    width: 100%;
+    height: 100%;
+}
+
+/*Hobbies page*/
+
+.main-hobbies{
+    flex:1;
+    background-color: bisque;
+    padding:20px;
+    
+}
+.main-hobbies section{
+    padding:20px;
+}
+.highlight{
+    color:rgb(207, 98, 20);
+    font-size: 20px;
+}
+.main-hobbies img{
+    width: 100%;
+    max-width:400px;
+    height:auto;
+    margin-left: 0px;
+    
+    
+}
+/*portfolio page*/
+
+.main-portfolio{
+    display:flex;
+    flex:1;
+    background-color: bisque;
+    padding:20px;
+}
+.main-portfolio div{
+    padding:20px;
+    
+}
+.main-portfolio iframe{
+    width: 100%;
+    max-width:400px;
+    height:300px;
+    margin-left: 0px;
+}
+.caption{
+    font-size:larger;
+    color:rgb(74, 34, 6);
+}
+/*Contacts page*/
+.main-contact {
+    background-color: bisque;
+    padding: 90px 100px;
+    height: 100vh;
+    
+}
+
+.main-contact address p {
+    margin-bottom: 80px;
+    color:rgb(65, 32, 7);
+}
+.main-contact a{
+    color:rgb(125, 34, 125);
+    
+}
+
+
+/*Responsiveness for mobile portrait*/
+@media screen and (max-width: 600px)  {
+    
+    .homen{
+        display:none;
+    }
+    #hamburger-nav{
+        display:flex;
+    }
+    .logo img{
+        width:150px;
+        height:150px;
+    }
+
+    .homem {
+        padding-top: 70px;
+    }
+    .homem a{
+        font-size: 1rem;
+
+    }
+
+    #quote {
+        padding-left: 50px;
+    }
+    .main-about {
+        grid-template-columns: 1fr;
+    }
+
+    #about, #image {
+        grid-column: 1; /* Both sections take full width on small screens */
+    }
+
+        
+    
+    .main-hobbies img {
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+    .main-portfolio{
+        display:block;
+        padding: 10px;
+
+    }
+    .main-portfolio div {
+        padding: 10px; 
+    }
+    .main-portfolio iframe {
+        width:100%;
+        height: auto; 
+        margin-left: 0; 
+    }
+    .main-contact {
+        padding: 10px;
+    }
+}
+/*Responsiveness for mobile landscape*/
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .logo img{
+        width:150px;
+        height:150px;
+
+    }
+    #about{
+        font-size: 0.5rem;
+    }
+    
+    
+    .main-portfolio div{
+        
+        margin-top: -10px;
+        
+    }
+    .caption{
+        font-size:1rem;
+    }
+    .main-portfolio iframe{
+        width:250px;
+        height:200px;
+    }
+    .main-contact {
+        padding: 10px;
+    }
+
+}
+   
+
+
+/*Responsiveness for tablet*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .homeh a{
+       font-size:1rem;
+       
+    }
+    .homem {
+        font-size:0.75rem;
+    }
+    .homem a{
+        font-size: 1rem;
+
+    }
+    #quote{
+        padding-right:70px;
+    }
+    #about{
+        font-size: 1rem;
+    }
+    
+    .main-hobbies{
+        display:grid;
+        
+    }
+    
+    .main-hobbies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr);    
+        gap: 10px; 
+    }
+      
+    .main-hobbies figure {
+        
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+    .main-portfolio{
+        padding-top:130px;
+        
+    }
+
+}
+/*Responsiveness for desktop*/
+@media only screen and (min-width: 901px) {
+
+    #quote{
+        padding-right:70px;
+    }
+    #about{
+        font-size: 1.25rem;
+    }
+    
+    .main-hobbies{
+        display: flex;
+    }
+    .main-portfolio{
+        padding:100px;
+        
+    }
+
+}
