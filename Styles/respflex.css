@@ -9,7 +9,7 @@
 }
 
 .home {
-    background: url('/UGR-9858-13/src/images/med.jpeg') center/cover no-repeat;
+    background: url('/UGR-9858-13/images/med.jpeg') center/cover no-repeat;
     background-position:fixed;
     height: 100vh;
     display: flex;
